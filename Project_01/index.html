@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -10,18 +11,40 @@
                 /* min-height: 100vh; */
                 /* margin: auto; */
             }
+            body, .wrapper{
+                /* background-color:white; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
             body{
                 background-color: #fc4445;
-                
+                min-height: 100vh;
             }
             .wrapper{
                 width: 500px;
                 background-color: white;
-                border-radius: 100px;
+                border-radius: 50px;
+                flex-direction: column;
+                padding: 30px 30px 30px;
+            }
+            .wrapper img{
+                max-width: 200px;
+            }
+            .wrapper .content{
+                width: 100%;
+                justify-content: space-between;
+                /* background-color: red; */
+            }
+
+            .wrapper .column{
+                border: 1px solid #999;
             }
         </style>
     </head>
     <body>
+        <!-- <h1>Clock</h1> -->
         <div class="wrapper">
             <img src="clock.jpg" alt="clock">
             <h1>04:20:00 PM</h1>
@@ -33,35 +56,35 @@
                         <option value="02">02</option>
                         <option value="03">03</option>
                         <!-- <option value="Minute">Minute</option>
-                        <option value="Second">Second</option> -->
-                    </select>
-                </div>
-            <!-- Minute -->
-            <!-- <div class="content"> -->
-                <div class="column">
+                            <option value="Second">Second</option> -->
+                        </select>
+                    </div>
+                    <!-- Minute -->
+                    <!-- <div class="content"> -->
+                        <div class="column">
                     <select>
                         <option value="Minute">Minute</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
                         <!-- <option value="Minute">Minute</option>
-                        <option value="Second">Second</option> -->
-                    </select>
-                </div>
-            <!-- </div> -->
-            <!-- Second -->
-            <!-- <div class="content"> -->
-                <div class="column">
-                    <select>
-                        <option value="AM/PM">AM/PM</option>
-                        <option value="AM">AM</option>
-                        <option value="PM">PM</option>
-                        <!-- <option value="Minute">Minute</option>
-                        <option value="Second">Second</option> -->
-                    </select>
-                </div>
-            </div>
-        </div>
-        <button></button>
-    </body>
+                            <option value="Second">Second</option> -->
+                        </select>
+                    </div>
+                    <!-- </div> -->
+                    <!-- Second -->
+                    <!-- <div class="content"> -->
+                        <div class="column">
+                            <select>
+                                <option value="AM/PM">AM/PM</option>
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                                <!-- <option value="Minute">Minute</option>
+                                    <option value="Second">Second</option> -->
+                                </select>
+                            </div>
+                        </div>
+                        <button> Set Alarm</button>
+                    </div>
+                </body>
 </html>
